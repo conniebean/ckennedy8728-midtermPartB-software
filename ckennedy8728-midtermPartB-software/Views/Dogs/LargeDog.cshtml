@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Large Dog";
+}
+
+<h2 class="jumbotron text-center" style="background-color: palevioletred">Tails N Scales Dog Room</h2>
+
+<div class="text-center">
+    <h3>You have chosen a LARGE DOG!</h3>
+    <div>
+        <p>
+            Your new dog came tearing out of the back room, almost knocking you
+            (and the rest of the store) over. You got slobbered on, @UserHelper.GetPlayerName(Context)!
+        </p>
+    </div>
+
+
+
+    <div class="text-center" style="border: dotted">
+        <h4>What would you like to do?:</h4>
+
+        <a asp-action="WorkInProgress" asp-controller="Home">Pet your new dog</a><br />
+
+        <a asp-action="WorkInProgress" asp-controller="Home">Name your new dog</a><br />
+
+        <a asp-action="WorkInProgress" asp-controller="Home">Browse store for supplies</a><br />
+
+        <a asp-action="WorkInProgress" asp-controller="Home">Leave store</a><br />
+
+    </div><br />
+    <div>
+        <a asp-action="PickAnAnimal" asp-controller="Home" class="btn btn-sm btn-outline-info text-black-50">Pick a different animal</a>
+    </div>
+</div>

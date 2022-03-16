@@ -1,0 +1,21 @@
+﻿
+@{
+    ViewData["Title"] = "Reptile Options";
+}
+
+<h2 class="jumbotron text-center" style="background-color: darkseagreen">Tails N Scales Reptile Room</h2>
+
+<div class="text-center">
+    <h3>@UserHelper.GetPlayerName(Context), you have chosen REPTILE!</h3>
+
+    <div class="text-center col-md-8 container-fluid" style="border: dotted">
+        <h4>Great choice. You have two options from here:</h4>
+        <a asp-action="HasLegs" asp-controller="Reptiles">Has Legs</a><br />
+
+        <a asp-action="HasNoLegs" asp-controller="Reptiles">Has No Legs</a>
+    </div><br />
+    <div>
+        <a asp-action="PickAnAnimal" asp-controller="Home" class="btn btn-sm btn-outline-info text-black-50">Pick a different animal</a>
+    </div>
+
+</div>

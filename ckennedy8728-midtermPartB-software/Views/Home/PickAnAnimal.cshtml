@@ -1,0 +1,20 @@
+﻿
+@{
+    ViewData["Title"] = "Pick An Animal";
+}
+
+<h2 class="jumbotron text-center" style="background-color: lightsalmon">
+        Welcome to Tails N Scales, @UserHelper.GetPlayerName(Context)!</h2>
+
+<div class="text-center col-md-8 container-fluid" style="border: dotted">
+    <h3>Time to pick your animal companion</h3>
+
+    <a asp-action="DogOptions" asp-controller="Dogs">Dog</a>
+    <br />
+    <a asp-action="CatOptions" asp-controller="Cats">Cat</a>
+    <br />
+    <a asp-action="FishOptions" asp-controller="Fish">Fish</a>
+    <br />
+    <a asp-action="ReptileOptions" asp-controller="Reptiles">Reptile</a>
+    <br />
+</div>

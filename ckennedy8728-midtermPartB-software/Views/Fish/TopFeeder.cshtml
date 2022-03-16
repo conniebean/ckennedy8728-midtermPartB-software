@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Top Feeder";
+}
+
+<h2 class="jumbotron text-center" style="background-color: cornflowerblue">Tails N Scales Fish Room</h2>
+
+<div class="text-center">
+    <h3>You have chosen a TOP FEEDER!</h3>
+    <div>
+        <p>Hmm, your new friend looks hungry, @UserHelper.GetPlayerName(Context). Better find out what to feed him...</p>
+    </div>
+
+    <div class="text-center" style="border: dotted">
+        <h4>What would you like to do?:</h4>
+
+        <a asp-action="WorkInProgress" asp-controller="Home">Feed your new fish</a><br />
+
+        <a asp-action="WorkInProgress" asp-controller="Home">Name your new fish</a><br />
+
+        <a asp-action="WorkInProgress" asp-controller="Home">Browse store for supplies</a><br />
+
+        <a asp-action="WorkInProgress" asp-controller="Home">Leave store</a><br />
+
+    </div><br>
+    <div>
+        <a asp-action="PickAnAnimal" asp-controller="Home" class="btn btn-sm btn-outline-info text-black-50">Pick a different animal</a>
+    </div>
+</div>
+

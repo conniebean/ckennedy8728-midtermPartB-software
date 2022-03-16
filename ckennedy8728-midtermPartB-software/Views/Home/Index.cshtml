@@ -1,0 +1,22 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Tails N Scales Pet Shop";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the city!</h1>
+
+    <h3>Let's get you started off right with your very own companion. But first:</h3>
+
+    <form method="post" asp-action="Index" asp-controller="Home">
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <div>
+            <label asp-for="UserName">What's your name?</label>
+            <input type="text" asp-for="UserName" class="text-dark" />
+            <span asp-validation-for="UserName" class="text-danger"></span>
+        </div>
+        <div class="text-center">
+            <button type="submit" class="btn btn-dark" style="color: white">Let's pick an animal!</button>
+        </div>
+    </form>
+</div>
